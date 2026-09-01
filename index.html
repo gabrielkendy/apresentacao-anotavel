@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>5 Funis de Venda — Apresentação Premium + Anotação</title>
+<title>Apresentação Anotável — Template Premium (Slides + Prancheta)</title>
 <style>
   :root{
     --bg:#eef0f3; --card:#ffffff; --line:#e4e7ec; --ink:#16181d; --muted:#6b7280;
@@ -65,7 +65,7 @@
   h1 .g{color:var(--green);} h1 .b{color:var(--blue);} h1 .a{color:var(--amber);} h1 .r{color:var(--red);}
   .sub{color:var(--muted);font-size:clamp(14px,1.5vw,18px);margin-top:16px;max-width:58ch;line-height:1.55;}
   .grid{display:grid;gap:14px;margin-top:26px;}
-  .g2{grid-template-columns:repeat(2,1fr);} .g3{grid-template-columns:repeat(3,1fr);} .g5{grid-template-columns:repeat(5,1fr);}
+  .g2{grid-template-columns:repeat(2,1fr);} .g3{grid-template-columns:repeat(3,1fr);} .g4{grid-template-columns:repeat(4,1fr);} .g5{grid-template-columns:repeat(5,1fr);}
   .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 1px 2px rgba(22,24,29,.04),0 6px 16px rgba(22,24,29,.05);}
   .card b{display:block;font-size:16px;margin-bottom:4px;}
   .card p{color:var(--muted);font-size:13px;line-height:1.5;}
@@ -167,106 +167,70 @@
   addSlide(`
     <div class="cover">
       <div>
-        <span class="coverbadge">🎯 Zápia · Estratégia de Vendas</span>
-        <h1>5 FUNIS DE VENDA<br><span class="g">pra Vender Mais</span><br>Todo Mês</h1>
-        <p class="sub">Cada público da sua base recebe o funil certo, no momento certo, em 3 canais ao mesmo tempo.</p>
+        <span class="coverbadge">🎯 Template · Apresentação Anotável</span>
+        <h1>SUA IDEIA<br><span class="g">em uma apresentação</span><br>premium</h1>
+        <p class="sub">Slides 16:9, prancheta livre e pincel pra riscar por cima. Troque este conteúdo pelos seus slides.</p>
       </div>
       <div class="stats">
-        <div class="stat"><span class="badge" style="background:var(--blue)">5</span><div><b>Funis</b><p>um pra cada público</p></div></div>
-        <div class="stat"><span class="badge" style="background:var(--green)">3</span><div><b>Canais</b><p>WhatsApp + e-mail + redes</p></div></div>
-        <div class="stat"><span class="badge" style="background:var(--amber)">3x</span><div><b>Mais vendas</b><p>mesma taxa de conversão</p></div></div>
+        <div class="stat"><span class="badge" style="background:var(--blue)">16:9</span><div><b>Moldura</b><p>padrão em todos</p></div></div>
+        <div class="stat"><span class="badge" style="background:var(--green)">N</span><div><b>Anotação</b><p>pincel calibrado</p></div></div>
+        <div class="stat"><span class="badge" style="background:var(--amber)">S</span><div><b>Salvar</b><p>PNG por slide</p></div></div>
       </div>
     </div>`);
 
   addSlide(`
-    <span class="kicker">A base de tudo</span>
-    <h1>A fórmula do <span class="b">faturamento</span></h1>
-    <div class="formula">
-      <div class="fcell"><span class="big g">Clientes</span><div class="lbl">nº de clientes</div></div>
-      <span class="fop">×</span>
-      <div class="fcell"><span class="big">Ticket médio</span><div class="lbl">quanto cada um gasta</div></div>
-      <span class="fop">×</span>
-      <div class="fcell"><span class="big">Frequência</span><div class="lbl">quantas vezes compra</div></div>
-    </div>
-    <div class="fnote">▲ Essa estratégia mexe na primeira: mais clientes, mais oportunidades.</div>`);
-
-  addSlide(`
-    <span class="kicker">O diagnóstico</span>
-    <h1>O erro de tratar <span class="r">todo mundo igual</span></h1>
+    <span class="kicker">Como editar</span>
+    <h1>Um bloco <span class="b">addSlide</span> por slide</h1>
     <div class="grid g3">
-      <div class="card"><div class="emo">📢</div><b>Mensagem única</b><p>a mesma oferta pra base inteira</p></div>
-      <div class="card"><div class="emo">⏰</div><b>Momento errado</b><p>oferta cedo ou tarde vira spam</p></div>
-      <div class="card"><div class="emo">😞</div><b>Venda perdida</b><p>ninguém compra sem momento</p></div>
-    </div>
-    <p class="sub" style="margin-top:26px">A mensagem certa no momento certo é oportunidade. Fora disso, é spam.</p>`);
-
-  const funis=[['🆕','1','Alunos novos','7 dias grátis'],['💬','2','Clientes ativos','comunicados'],['⏳','3','Renovação','bonificação'],['🔁','4','Ex-alunos','oferta de volta'],['🎂','5','Aniversariantes','brinde']];
-  addSlide(`
-    <span class="kicker">A estratégia</span>
-    <h1>5 funis, <span class="a">um pra cada público</span></h1>
-    <div class="grid g5">
-      ${funis.map(f=>`<div class="card" style="text-align:center;padding:16px 10px"><div class="emo">${f[0]}</div><span class="big b">${f[1]}</span><div style="height:5px"></div><b style="font-size:14px">${f[2]}</b><p style="font-size:12px">${f[3]}</p></div>`).join('')}
+      <div class="card"><div class="emo">✍️</div><b>Abra o HTML</b><p>procure os blocos addSlide(...) no fim do arquivo</p></div>
+      <div class="card"><div class="emo">📝</div><b>Troque o conteúdo</b><p>cada bloco é um slide: título, cards, emojis, SVGs</p></div>
+      <div class="card"><div class="emo">🚀</div><b>Salve e abra</b><p>zero build, zero dependência, funciona offline</p></div>
     </div>`);
 
   addSlide(`
-    <span class="kicker">A execução</span>
-    <h1>3 canais ao mesmo <span class="b">tempo</span></h1>
+    <span class="kicker">Recursos</span>
+    <h1>Grids de <span class="a">cards</span> prontos</h1>
     <div class="grid g3">
-      <div class="card" style="text-align:center;padding:26px 16px"><div class="emo" style="font-size:44px">📱</div><b style="font-size:17px">WhatsApp</b><p>API oficial, selo de empresa, resposta na mesma conversa</p></div>
-      <div class="card" style="text-align:center;padding:26px 16px"><div class="emo" style="font-size:44px">✉️</div><b style="font-size:17px">E-mail</b><p>oferta detalhada + link, na caixa de entrada</p></div>
-      <div class="card" style="text-align:center;padding:26px 16px"><div class="emo" style="font-size:44px">📲</div><b style="font-size:17px">Redes sociais</b><p>segmentada: só quem tá na lista vê</p></div>
+      <div class="card"><div class="emo">🎨</div><b>3 colunas</b><p>grid g3, ótimo pra pilares</p></div>
+      <div class="card"><div class="emo">🧩</div><b>4 colunas</b><p>grid g4, pra etapas</p></div>
+      <div class="card"><div class="emo">🗂️</div><b>5 colunas</b><p>grid g5, pra listas</p></div>
     </div>
-    <p class="sub" style="margin-top:24px;font-weight:700;color:var(--green-d)">Abre o WhatsApp → tá lá. Abre o e-mail → tá lá. Entra na rede → tá lá. 3 toques, mesma semana.</p>`);
+    <div class="grid g4" style="margin-top:14px">
+      <div class="card" style="text-align:center;padding:18px 10px"><span class="big b">01</span><p style="font-size:12px">Passo um</p></div>
+      <div class="card" style="text-align:center;padding:18px 10px"><span class="big g">02</span><p style="font-size:12px">Passo dois</p></div>
+      <div class="card" style="text-align:center;padding:18px 10px"><span class="big">03</span><p style="font-size:12px">Passo três</p></div>
+      <div class="card" style="text-align:center;padding:18px 10px"><span class="big">04</span><p style="font-size:12px">Passo quatro</p></div>
+    </div>`);
 
   addSlide(`
-    <span class="kicker">A prova</span>
-    <h1>Mais oportunidades, <span class="a">mesma conversão</span></h1>
-    <div class="split" style="grid-template-columns:1fr 1.1fr">
-      <div class="grid g2" style="margin-top:20px">
-        <div class="card" style="text-align:center;padding:22px"><span class="big b">500</span><p style="font-size:13px;margin:4px 0 10px">pessoas contatadas</p><span class="big">50</span><p style="font-size:11px">vendas (10%)</p></div>
-        <div class="card" style="text-align:center;padding:22px;border-color:rgba(16,185,129,.4)"><span class="big g">1.500</span><p style="font-size:13px;margin:4px 0 10px">pessoas contatadas</p><span class="big">150</span><p style="font-size:11px">vendas (10%)</p></div>
+    <span class="kicker">Figuras visuais</span>
+    <h1>SVG direto no <span class="g">slide</span></h1>
+    <div class="split">
+      <div>
+        <svg viewBox="0 0 320 220" width="100%" style="max-width:340px">
+          <rect x="30" y="120" width="80" height="70" rx="10" fill="#93c5fd"/>
+          <text x="70" y="110" text-anchor="middle" font-size="16" font-weight="700" fill="#2563eb">antes</text>
+          <rect x="200" y="40" width="80" height="150" rx="10" fill="#34d399"/>
+          <text x="240" y="30" text-anchor="middle" font-size="16" font-weight="800" fill="#059669">depois</text>
+          <path d="M115 115 L195 90" stroke="#16181d" stroke-width="3" stroke-linecap="round"/>
+          <text x="155" y="100" text-anchor="middle" font-size="18">🚀</text>
+        </svg>
       </div>
       <div>
-        <svg viewBox="0 0 320 240" width="100%" style="max-width:360px">
-          <rect x="30" y="150" width="80" height="60" rx="10" fill="#93c5fd"/>
-          <text x="70" y="140" text-anchor="middle" font-size="16" font-weight="700" fill="#2563eb">500</text>
-          <rect x="190" y="40" width="80" height="170" rx="10" fill="#34d399"/>
-          <text x="230" y="30" text-anchor="middle" font-size="18" font-weight="800" fill="#059669">1.500</text>
-          <text x="70" y="230" text-anchor="middle" font-size="12" fill="#6b7280">antes</text>
-          <text x="230" y="230" text-anchor="middle" font-size="12" fill="#6b7280">com funis</text>
-          <path d="M120 120 L185 90" stroke="#16181d" stroke-width="3" stroke-linecap="round"/>
-          <text x="152" y="105" text-anchor="middle" font-size="20">🚀</text>
-        </svg>
-        <p style="text-align:center;font-size:12px;color:var(--muted)">Vendas triplicadas sem melhorar a taxa</p>
+        <p class="sub">Use SVG inline pros gráficos, fluxos e metáforas. Tudo é editável como texto.</p>
       </div>
     </div>`);
 
-  const zap=[['🗂','CRM','separa os 5 públicos'],['📤','Disparos','API oficial por funil'],['📊','Métricas','abriu, respondeu, comprou'],['🏢','Centralização','celulares num lugar'],['🤖','Agente supervisor','cuida do CRM e da gestão']];
   addSlide(`
-    <span class="kicker">A solução</span>
-    <h1>A Zápia faz tudo <span class="g">no mesmo lugar</span></h1>
-    <div class="grid g5">
-      ${zap.map(z=>`<div class="card" style="text-align:center;padding:20px 10px"><div class="emo" style="font-size:36px">${z[0]}</div><b style="font-size:14px">${z[1]}</b><p style="font-size:11px">${z[2]}</p></div>`).join('')}
-    </div>`);
-
-  addSlide(`
-    <span class="kicker">Bora vender mais</span>
-    <h1>Comece por <span class="g">UM funil</span>.<br>Valide. Escale.</h1>
-    <div class="split" style="grid-template-columns:auto 1fr;gap:44px;margin-top:26px;align-items:center">
-      <div style="text-align:center">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=190x190&data=https%3A%2F%2Fzapia.site" alt="QR Code ZapIA" style="width:180px;height:180px;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);background:#fff;padding:10px">
-        <p style="font-size:11px;color:var(--muted);margin-top:10px">Aponte a câmera e teste grátis</p>
-      </div>
-      <div class="grid g2" style="margin-top:0">
-        <div class="card"><b>🚀 Zápia</b><p>zapia.site</p></div>
-        <div class="card"><b>📱 WhatsApp</b><p>(31) 99755-4040</p></div>
-        <div class="card"><b>✉️ E-mail</b><p>contato@zapia.site</p></div>
-        <div class="card"><b>📸 Instagram</b><p>@appzap.ia</p></div>
-      </div>
+    <span class="kicker">CTA</span>
+    <h1>Chame pra <span class="g">ação</span></h1>
+    <div class="grid g2" style="max-width:640px;margin-top:26px">
+      <div class="card"><b>🌐 Site</b><p>seudominio.com.br</p></div>
+      <div class="card"><b>📱 WhatsApp</b><p>(00) 00000-0000</p></div>
     </div>
-    <p class="sub" style="margin-top:26px;font-size:13px">📚 Material do aluno: materiais-aulas.vercel.app/zapia-5-funis</p>`);
+    <p class="sub" style="margin-top:26px;font-size:13px">Troque pelos seus contatos e links.</p>`);
 
-  addSlide(`<span class="kicker">Prancheta livre</span><h1>Desenhe à vontade ✍️</h1><p class="sub">Use o pincel pra explicar, riscar e montar teu próprio funil.</p>`);
+addSlide(`<span class="kicker">Prancheta livre</span><h1>Desenhe à vontade ✍️</h1><p class="sub">Use o pincel pra explicar, riscar e montar teu próprio funil.</p>`);
   const FREE_INDEX=slides.length-1;
 
   // ================= NAVEGAÇÃO =================
